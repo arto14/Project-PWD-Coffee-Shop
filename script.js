@@ -7,7 +7,7 @@ const menuSections = ['coffee', 'non-coffee', 'snacks'];
 let currentMenuIndex = 0;
 
 function showMenu(index) {
-    // Hide all sections and remove active class from titles
+    // Sembunyikan semua bagian dan hapus kelas aktif dari judul
     document.querySelectorAll('.menu-section').forEach(section => {
         section.classList.remove('active');
     });

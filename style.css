@@ -20,7 +20,15 @@ header {
 }
 
 .logo-container {
-    flex: 1; /* Logo mengambil ruang yang lebih besar di sisi kiri */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    flex: 1; /* Logo takes more space on the left */
+}
+
+.header-logo {
+    width: 50px; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add margin to the right for spacing */
 }
 
 .logo {
