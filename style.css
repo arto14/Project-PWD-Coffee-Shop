@@ -6,7 +6,7 @@
 }
 
 /* General Styles */
-body {
+body { 
     line-height: 1.6;
     color: #333;
 }
@@ -887,6 +887,61 @@ footer {
     .highlight-modal-content {
         padding: 20px;
         width: 95%;
+    }
+}
+
+/* Responsive adjustments for header */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column; /* Menyusun menu secara vertikal */
+        display: none; /* Sembunyikan menu secara default */
+    }
+
+    .navbar ul.active {
+        display: flex; /* Tampilkan menu saat hamburger diklik */
+    }
+
+    .hamburger {
+        display: block; /* Tampilkan hamburger di mobile */
+    }
+
+    .logo {
+        font-size: 1.5rem; /* Ukuran logo lebih kecil di mobile */
+    }
+}
+
+/* Responsive adjustments for landing section */
+@media (max-width: 768px) {
+    .landing-content h1 {
+        font-size: 2rem; /* Ukuran teks lebih kecil di mobile */
+    }
+
+    .landing-content .btn {
+        padding: 8px 16px; /* Ukuran tombol lebih kecil di mobile */
+    }
+}
+
+/* Responsive adjustments for menu items */
+@media (max-width: 768px) {
+    .menu-items {
+        flex-direction: column; /* Susun menu secara vertikal */
+    }
+
+    .menu-item {
+        width: 100%; /* Menu item mengambil lebar penuh */
+        margin-bottom: 20px; /* Jarak antar item */
+    }
+}
+
+/* Responsive adjustments for footer */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Susun footer secara vertikal */
+        align-items: center; /* Rata tengah */
+    }
+
+    .footer-section {
+        text-align: center; /* Rata tengah teks di footer */
     }
 }
 
