@@ -945,22 +945,3 @@ footer {
     }
 }
 
-/* Default header-logo size */
-.header-logo {
-    width: 50px; /* Default size for larger screens */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 10px; /* Add margin to the right for spacing */
-}
-
-/* Media Query for Mobile Devices */
-@media (max-width: 768px) {
-    .header-logo {
-        width: 40px; /* Smaller size for mobile */
-        margin-right: 5px; /* Adjust margin for mobile */
-    }
-
-    .logo {
-        font-size: 1.5rem; /* Adjust font size for mobile */
-    }
-}
-
